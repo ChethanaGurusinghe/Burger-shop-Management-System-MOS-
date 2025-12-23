@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Customers | MOS Burgers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="top-nav" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="store.html">Store</a>
+                <a href="orders.html">Orders</a>
+                <a style="color: black;" href="customers.html"
+                    class="active">Customers</a>
+                <a href="reports.html">Reports</a>
+                <button class="nav-toggle" id="navToggle">&#9776;</button>
+            </nav>
+        </header>
+
+        <main class="customers-container">
+
+            <h2>Customer Management</h2>
+
+            <!-- IMAGE DECORATION -->
+            <div class="customers-image-box">
+                <img src="assets/customers.png" alt="Customers Decoration">
+            </div>
+
+            <!-- FORM -->
+            <div class="customers-form">
+                <input id="customerId" placeholder="Customer ID">
+                <input id="customerName" placeholder="Customer Name">
+                <input id="customerPhone" placeholder="Phone Number">
+
+                <button id="addCustomerBtn" onclick="addCustomer()">Add
+                    Customer</button>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="customers-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="customersTable">
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <script src="js/data.js"></script>
+        <script src="js/customers.js"></script>
+
+    </body>
+</html>
