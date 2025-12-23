@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports | MOS Burgers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="top-nav" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="store.html">Store</a>
+            <a href="orders.html">Orders</a>
+            <a href="customers.html">Customers</a>
+            <a style="color: black;" href="reports.html" class="active">Reports</a>
+            <button class="nav-toggle" id="navToggle">&#9776;</button>
+        </nav>
+    </header>
+
+    <main class="reports-container">
+
+        <h2>Reports Dashboard</h2>
+
+        <!-- IMAGE DECORATION -->
+        <div class="reports-image-box">
+            <img src="assets/reports.png" alt="Reports Decoration">
+        </div>
+
+        <!-- REPORT CARDS -->
+        <div class="report-cards">
+            <div class="report-card">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">0</p>
+            </div>
+            <div class="report-card">
+                <h3>Total Customers</h3>
+                <p id="totalCustomers">0</p>
+            </div>
+            <div class="report-card">
+                <h3>Total Sales</h3>
+                <p id="totalSales">Rs. 0</p>
+            </div>
+            <div class="report-card">
+                <h3>Best-Selling Item</h3>
+                <p id="bestItem">-</p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/reports.js"></script>
+
+</body>
+</html>
