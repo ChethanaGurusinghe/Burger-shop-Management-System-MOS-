@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Store | MOS Burgers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="top-nav" id="navbar">
+                <a href="index.html">Home</a>
+                <a style="color: black;" href="store.html"
+                    class="active">Store</a>
+                <a href="orders.html">Orders</a>
+                <a href="customers.html">Customers</a>
+                <a href="reports.html">Reports</a>
+                <button class="nav-toggle" id="navToggle">&#9776;</button>
+            </nav>
+        </header>
+
+        <main class="store-container">
+
+            <h2>Store Management</h2>
+
+            <div class="store-image-box">
+                <img src="assets/store.png" alt="Store Decoration">
+            </div>
+
+            <!-- FORM -->
+            <div class="store-form">
+                <input id="itemCode" placeholder="Item Code">
+                <input id="itemName" placeholder="Item Name">
+
+                <select id="itemCategory">
+                    <option value>Category</option>
+                    <option>Burgers</option>
+                    <option>Submarines</option>
+                    <option>Fries</option>
+                    <option>Pasta</option>
+                    <option>Chicken</option>
+                    <option>Beverages</option>
+                </select>
+
+                <input id="itemPrice" type="number" placeholder="Price">
+                <input id="itemDiscount" type="number" placeholder="Discount %">
+                <input id="itemQuantity" type="number" placeholder="Quantity">
+                <input id="itemExpiry" type="date">
+
+                <button id="addItemBtn" onclick="addItem()">Add Item</button>
+
+            </div>
+
+            <div class="table-wrapper">
+                <!-- TABLE -->
+                <table class="store-table">
+                    <thead>
+                        <tr>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Expiry</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemTable">
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <script src="js/data.js"></script>
+        <script src="js/store.js"></script>
+
+    </body>
+</html>
