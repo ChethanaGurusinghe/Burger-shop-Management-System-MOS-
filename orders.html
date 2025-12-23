@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Orders | MOS Burgers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="top-nav" id="navbar">
+                <a href="index.html">Home</a>
+                <a href="store.html">Store</a>
+                <a style="color: black;" href="orders.html" class="active">Orders</a>
+                <a href="customers.html">Customers</a>
+                <a href="reports.html">Reports</a>
+                <button class="nav-toggle" id="navToggle">&#9776;</button>
+            </nav>
+        </header>
+
+        <main class="orders-container">
+
+            <h2>Order Management</h2>
+
+            <div class="orders-image-box">
+                <img src="assets/orders.png" alt="Orders Decoration">
+            </div>
+
+            <h2>Order Management</h2>
+
+            <!-- ADD ORDER FORM -->
+            <div class="orders-form">
+                <input id="orderId" placeholder="Order ID">
+                <input id="customerName" placeholder="Customer Name">
+                <select id="orderItem">
+                    <option value>Select Item</option>
+                    <!-- dynamically fill from foodItems -->
+                </select>
+                <input id="orderQuantity" type="number" placeholder="Quantity">
+                <button id="addOrderBtn" onclick="addOrder()">Add Order</button>
+            </div>
+
+            <!-- ORDERS TABLE -->
+            <table class="orders-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Total Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="ordersTable">
+                    <!-- Orders will be dynamically inserted here -->
+                </tbody>
+            </table>
+
+        </main>
+
+        <script src="js/data.js"></script>
+        <script src="js/orders.js"></script>
+
+    </body>
+</html>
